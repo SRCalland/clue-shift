@@ -1,0 +1,33 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Clue Shift</title> <link rel="stylesheet" href="style.css"> </head>
+<body>
+<main class="game-container">
+<header class="game-header"> <div> <h1>CLUE SHIFT</h1> <p class="tagline">Train your crossword brain.</p> </div>
+<div class="round-info"> <span id="difficulty">EASY</span> <span id="question-number">1 / 10</span> </div> </header>
+<section class="score-bar"> <span>Score: <strong id="score">100</strong></span> <span>🔥 <strong id="streak">0</strong></span> </section>
+<section class="clue-card">
+<div class="clue-type" id="clue-type"> DEFINITION </div>
+<div class="clue" id="clue"> A small domesticated feline. </div>
+</section>
+<section class="answer-section">
+<label for="answer">YOUR ANSWER</label>
+<input type="text" id="answer" autocomplete="off" autocapitalize="characters" spellcheck="false" >
+<button id="check-button" class="primary-button"> CHECK </button>
+</section>
+<section class="help-section">
+<p class="stuck-label">STUCK?</p>
+<button id="shift-button" class="shift-button"> ↻ SHIFT CLUE </button>
+<div class="secondary-buttons">
+<button id="easier-button"> MAKE IT EASIER </button>
+<button id="hint-button"> HINT </button>
+</div>
+</section>
+<section id="message" class="message hidden"> <h2 id="message-title"></h2> <p id="message-text"></p> <button id="next-button" class="primary-button"> NEXT → </button> </section>
+<section id="round-complete" class="round-complete hidden">
+<h2>ROUND COMPLETE</h2>
+<div class="final-score"> <span id="final-score">0</span> <small>POINTS</small> </div>
+<p id="final-summary"></p>
+<button id="play-again-button" class="primary-button"> PLAY AGAIN </button>
+</section>
+</main>
+<script src="questions.js"></script> <script src="game.js"></script>
+</body> </html>
